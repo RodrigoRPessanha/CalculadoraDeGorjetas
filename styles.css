@@ -1,0 +1,93 @@
+:root {
+    --gradientBlueBackground: rgb(0,242,254);
+    --gradientBlueFrame:linear-gradient(0deg, rgba(0,242,254,0.25) 0%, rgba(79,172,254,0.74) 22%, rgba(79,172,254,0.74) 76%, rgba(0,242,254,0.25) 100%);
+    --gradientBlueResult: linear-gradient(-18deg, rgba(0,242,254,0.25) 0%, rgba(79,172,254,0.74) 100%);
+
+}
+
+body {
+    background-color: rgb(200, 200, 200);
+    font-size: 15px;
+    font-family: "Roboto", arial, helvetica, sans-serif;
+    
+}
+
+#container {
+    height: 525px;
+    width: 360px;
+    margin: 100px auto;
+    background-color: #FFFFFF;
+    background: var(--gradientBlueFrame);
+    border-radius: 29px;
+    border: 3px solid black
+}
+.title {
+    
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tipsForm {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.billFormInput{
+    background-color: #FFFFFF;
+    width: 120px;
+    padding: 5px 5px 5px 5px;
+}
+
+.qualityFormInput{
+    background-color: #FFFFFF;
+    width: 90%;
+    padding: 2px 5px 2px 5px;
+    
+}
+
+.peopleFormInput{
+    background-color: #FFFFFF;
+    width: 10%;
+    padding: 2px 5px 2px 5px;
+}
+.billFormInput:focus{
+    border: 3px solid rgb(20,20,20);
+    outline: none;
+}
+
+.qualityFormInput:focus{
+    border: 3px solid black;
+    outline: none;
+}
+
+.peopleFormInput:focus{
+    border: 3px solid black;
+    outline: none;
+}
+
+.container-qualityOfService{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.container-bill{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.container-people{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.formSubmit{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px auto;
+    border-radius: 5px;
+    width: 160px;
+    height: 50px;
+    font-size: 17px;
+}

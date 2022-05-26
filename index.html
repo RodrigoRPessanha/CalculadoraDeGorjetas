@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de Gorjetas</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <div>
+                <h1 class="title">Calculadora de Gorjetas</h1>
+            </div>
+            <div>
+                <form class="tipsForm">
+                    <div class="container-bill">
+                        <label for="bill">
+                            Valor total da conta
+                        </label>
+                        <p>
+                            R$ <input type="number" placeholder="0" name="bill" id="bill" class="billFormInput">
+                        </p>
+                    </div>
+                    <div class="container-qualityOfService">
+                        <label for="qualityOfService" >
+                            Como foi o serviço?
+                        </label>
+                        <p>
+                            <select name="qualityOfService" id="qualityOfService" class="qualityFormInput">
+                                <option disabled selected value="0"> -- Escolha uma opção</option>
+                                <option value="0.3"> 30% - Incrível</option>
+                                <option value="0.2"> 20% - Bom</option>
+                                <option value="0.15"> 15% - Razoável</option>
+                                <option value="0.1"> 10% - Ruim</option>
+                                <option value="0.05"> 5% - Péssimo</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div class="container-people">
+                        <label for="people">
+                            Quantas pessoas dividirão a conta
+                        </label>
+                        <p>
+                            <input type="number" placeholder="1" name="people" id="people" class="peopleFormInput"> pessoa(s)
+                        </p>
+                    </div>
+                    <button type="submit" class="formSubmit">Calcular</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
