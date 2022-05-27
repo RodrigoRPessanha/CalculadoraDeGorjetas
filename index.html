@@ -9,20 +9,20 @@
     </head>
     <body>
         <div id="container">
-            <div>
+            <header>
                 <h1 class="title">Calculadora de Gorjetas</h1>
-            </div>
-            <div>
+            </header>
+            <main>
                 <form class="tipsForm">
-                    <div class="container-bill">
+                    <section class="container-bill">
                         <label for="bill">
                             Valor total da conta
                         </label>
                         <p>
                             R$ <input type="number" placeholder="0" name="bill" id="bill" class="billFormInput">
                         </p>
-                    </div>
-                    <div class="container-qualityOfService">
+                    </section>
+                    <section class="container-qualityOfService">
                         <label for="qualityOfService" >
                             Como foi o serviço?
                         </label>
@@ -36,18 +36,18 @@
                                 <option value="0.05"> 5% - Péssimo</option>
                             </select>
                         </p>
-                    </div>
-                    <div class="container-people">
+                    </section>
+                    <section class="container-people">
                         <label for="people">
                             Quantas pessoas dividirão a conta
                         </label>
                         <p>
                             <input type="number" placeholder="1" name="people" id="people" class="peopleFormInput"> pessoa(s)
                         </p>
-                    </div>
+                    </section>
                     <button type="submit" class="formSubmit">Calcular</button>
                 </form>
-            </div>
+            </main>
         </div>
     </body>
 </html>
